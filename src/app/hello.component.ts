@@ -6,14 +6,9 @@ import { Component, Input, OnInit, OnChanges } from '@angular/core';
   styles: [`h1 { font-family: Arial; }`],
 })
 export class HelloComponent implements OnInit {
-  private array;
-  set myArray(value) {
-    if (value) {
-      this.array = value;
-    }
-  }
+  myArray = [];
 
   ngOnInit() {
-    console.log('array is', this.array);
+    console.log('array is', this.myArray);
   }
 }
